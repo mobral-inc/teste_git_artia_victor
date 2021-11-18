@@ -1,0 +1,25 @@
+# This is a basic workflow to help you get started with Actions
+
+name: pull_request_closed
+
+  
+on:
+  pull_request:
+    branches: 
+      - main
+    types: [closed]
+
+  
+jobs:
+  artia_comment_job:
+    runs-on: ubuntu-latest
+    name: Comment Activity.
+    steps:
+      - name: Comentando Atividade
+        id: comment
+        uses: mobral-inc/criar-comentario-por-pull-request@v1.0.2
+        with: 
+          organizationId: 111449
+          accountId: 3762971
+          creatorEmail: ${{ secrets.ARTIA_EMAIL }}
+          creatorPassword: ${{ secrets.ARTIA_PASSWORD }}
