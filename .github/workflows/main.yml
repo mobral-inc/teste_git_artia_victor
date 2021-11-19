@@ -17,6 +17,6 @@ jobs:
         id: comment
         uses: mobral-inc/criar-comentario-por-pull-request@v1.1.0
         with: 
-          organizationId: ${{ secrets.ORGANIZATION_ID }}
+          organizationId: ${{ secrets.ORGANIZATION_ID_VICTOR }}
               creatorEmail: ${{ secrets.VICTOR_EMAIL }}
           creatorPassword: ${{ secrets.VICTOR_PASSWORD }}
