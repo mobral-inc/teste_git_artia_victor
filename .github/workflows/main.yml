@@ -15,8 +15,8 @@ jobs:
     steps:
       - name: Comentando Atividade
         id: comment
-        uses: mobral-inc/criar-comentario-por-pull-request@v1.1.0
+        uses: mobral-inc/criar-comentario-por-pull-request@v1.1.1
         with: 
-          organizationId: ${{ secrets.ORGANIZATION_ID_VICTOR }}
-              creatorEmail: ${{ secrets.VICTOR_EMAIL }}
-          creatorPassword: ${{ secrets.VICTOR_PASSWORD }}
+          organizationId: ${{ secrets.ORGANIZATION_ID }}
+          creatorEmail: ${{ secrets.ARTIA_EMAIL }}
+          creatorPassword: ${{ secrets.ARTIA_PASSWORD }}
