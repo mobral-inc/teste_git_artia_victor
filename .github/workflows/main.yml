@@ -4,7 +4,7 @@ name: new_workflow
 on:
   pull_request:
     branches: 
-      - main
+      - $default-branch
     types: [closed]
 
   
