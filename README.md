@@ -6,3 +6,4 @@
 - TESTE 4
 - TESTE 5
 - TESTE 6
+- TESTE 7
